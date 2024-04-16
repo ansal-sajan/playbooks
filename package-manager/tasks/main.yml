@@ -1,0 +1,7 @@
+---
+- hosts: all
+  become: true
+  tasks:
+    - include_tasks: java.yml
+    - include_tasks: jenkins.yml
+    - include_tasks: python.yml
